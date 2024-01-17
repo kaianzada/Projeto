@@ -7,7 +7,7 @@ class Aluno(models.Model):
     email = models.EmailField()
 
     def __str__(self):
-        return self.nome + '-' + self.email
+        return self.nome + ' ' + '-' + ' ' + self.email
     
 class Curso(models.Model):
     nome_curso = models.CharField(max_length=200, null=False)
